@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- <style>
+        .back-video {
+            filter: grayscale(100%);
+        }
+    </style> -->
+    <style>
+        .container {
+
+            border: 2px solid #000000;
+            box-shadow: 0px 6px 60px #000000;
+
+
+        }
+
+        .heading {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 25px;
+            color: black;
+        }
+
+        .form-group input {
+            color: black;
+            border: 2px solid black;
+            font-weight: 900;
+        }
+
+        .back-video {
+            filter: brightness(75%);
+        }
+
+        #result {
+            display: block;
+            margin-bottom: 5px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="backgroundvideo">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+
+
+        <div class="form-group">
+            <label for="celsius">Celsius to Fahrenheit</label>
+            <input required placeholder="Celsius" type="number" id="celsius">
+        </div>
+        <h1 id="result"></h1>
+        <button class="btn" onclick="convert()">Enter</button>
+
+
+        <div></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
